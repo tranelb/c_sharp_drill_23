@@ -11,7 +11,7 @@ namespace C_sharp_drill_23
         static void Main()
         {
 
-            /*
+            
             //Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
             public class test
             {
@@ -23,7 +23,7 @@ namespace C_sharp_drill_23
 
 
             //end
-
+            /*
             //Overriding
             public class test
             {
