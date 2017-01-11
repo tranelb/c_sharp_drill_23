@@ -8,18 +8,23 @@ namespace C_sharp_drill_23
 {
     class Class1
     {
+
+        //Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
+        public class test
+        {
+            public void getStuff(int id)
+            {
+            }
+            public void getStuff(string name)
+            {
+            }
+        }
+
         static void Main()
         {
 
-            
-            //Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
-            public class test
-            {
-                public void getStuff(int id)
-                { }
-                public void getStuff(string name)
-                { }
-            }
+
+
 
 
             //end
@@ -49,4 +54,5 @@ namespace C_sharp_drill_23
         }
 
     }
+}
 
