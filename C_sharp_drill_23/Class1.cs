@@ -20,36 +20,32 @@ namespace C_sharp_drill_23
             }
         }
 
+
+        public class OverRideClass
+        {
+            public virtual void OverRideMethod(string var)
+            {
+                return "Default text from virtual void";
+            }
+
+        }
+
+        public class OverRider: OverRideClass
+        {
+            public override void OverRideMethod(string var)
+            {
+                return var + "Override text from override void";
+            }
+
+        }
+
         static void Main()
         {
 
-
-
-
-
-            //end
-            /*
-            //Overriding
-            public class test
-            {
-                public virtual void getStuff(int id)
-                {
-                    //Get stuff default location
-                }
-            }
-
-            public class test2 : test
-            {
-                public override void getStuff(int id)
-                {
-                    //base.getStuff(id);
-                    //or - Get stuff new location
-                }
-            }
-
-
-            //poooop
-            */
+            OverRideClass try1 = new OverRideClass();
+            Console.WriteLine(try1.OverRideMethod("dassdafsdf"));
+            OverRider try2 = new OverRider();
+            Console.WriteLine(try2.OverRideMethod("tasefffdgsdf"));
 
         }
 
