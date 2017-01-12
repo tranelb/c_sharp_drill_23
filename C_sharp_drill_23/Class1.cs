@@ -12,11 +12,11 @@ namespace C_sharp_drill_23
         //Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
         public class test
         {
-            public void getStuff(int id)
+            public int getStuff(int id)
             {
                 return id;
             }
-            public void getStuff(string name)
+            public string getStuff(string name)
             {
                 return name;
             }
@@ -25,7 +25,7 @@ namespace C_sharp_drill_23
 
         public class OverRideClass
         {
-            public virtual void OverRideMethod(string var)
+            public virtual string OverRideMethod(string var)
             {
                 return "Default text from virtual void";
             }
@@ -34,7 +34,7 @@ namespace C_sharp_drill_23
 
         public class OverRider: OverRideClass
         {
-            public override void OverRideMethod(string var)
+            public override string OverRideMethod(string var)
             {
                 return "Override text from override void";
             }
