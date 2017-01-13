@@ -97,6 +97,7 @@ namespace C_sharp_drill_23
 
             //nullable type?
             int nullVar = randArray[4];
+        }
 
             abstract class Shape
             {
